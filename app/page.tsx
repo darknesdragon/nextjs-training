@@ -1,9 +1,15 @@
+import { Metadata } from 'next';
 import AcmeLogo from '@/app/ui/acme-logo';
 import { ArrowRightIcon } from '@heroicons/react/24/outline';
 import Link from 'next/link';
 import style from '@/app/ui/home.module.css';
 import { lusitana } from '@/app/ui/fonts';
 import Image from 'next/image';
+
+const metadata: Metadata = {
+  title: 'Home',
+  metadataBase: new URL('https://next-learn-dashboard.vercel.sh'),
+};
 
 export default function Page() {
   return (
